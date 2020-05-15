@@ -1,0 +1,40 @@
+
+Showing logs for build [32mtest-organization-uc-environmen-kcxvq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-h65rd[0m
+{"level":"info","ts":1589506123.1376781,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1589506123.1385825,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mtest-organization-uc-environmen-kcxvq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-rs59p[0m
+{"level":"info","ts":1589506124.6912913,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1589506124.6951036,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mtest-organization-uc-environmen-kcxvq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mtest-organization-uc-environmen-kcxvq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-test-organization-uc-environmen-kcxvq-pw992[0m
+{"level":"info","ts":1589506130.9504604,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1589506131.4357443,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/test-organization-uc/environment-jenkinsx-staging.git @ master in path /workspace/source"}
+
+Showing logs for build [32mtest-organization-uc-environmen-kcxvq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:695c0896d08dac6affe0429ed1a0f612b52f26b7,1:fc7ba748dc8ce49ff58130c0e6fac62062437741
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow fc7ba748dc8ce49ff58130c0e6fac62062437741: 695c0896d08dac6affe0429ed1a0f612b52f26b7:
+DEBUG: ran git fetch --unshallow origin fc7ba748dc8ce49ff58130c0e6fac62062437741: 695c0896d08dac6affe0429ed1a0f612b52f26b7: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 695c0896d08dac6affe0429ed1a0f612b52f26b7
+DEBUG: ran git reset --hard 695c0896d08dac6affe0429ed1a0f612b52f26b7 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge fc7ba748dc8ce49ff58130c0e6fac62062437741
+DEBUG: ran git merge fc7ba748dc8ce49ff58130c0e6fac62062437741 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 695c0896d08dac6affe0429ed1a0f612b52f26b7..HEAD
+Merged SHA fc7ba748dc8ce49ff58130c0e6fac62062437741 with commit message 'chore: Promote spring-boot-http-gradle to version 0.0.1' into base branch master
+
+Showing logs for build [32mtest-organization-uc-environmen-kcxvq-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-build[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
