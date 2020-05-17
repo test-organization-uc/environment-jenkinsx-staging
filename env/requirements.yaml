@@ -10,6 +10,9 @@ dependencies:
 - name: express-hello
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.1
+- name: hello-video-3-1
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
 - name: spring-boot-http-gradle
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.1
