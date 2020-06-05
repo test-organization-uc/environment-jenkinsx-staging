@@ -16,6 +16,9 @@ dependencies:
 - name: hello-3-2-specify
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.2
+- name: hello-3-5-audit
+  repository: http://jenkins-x-chartmuseum:8080
+  version: 0.0.1
 - name: hello-video-3-1
   repository: http://jenkins-x-chartmuseum:8080
   version: 0.0.1
